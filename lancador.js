@@ -229,11 +229,12 @@ function lanca_csv_google(lines){
    	
 	for (n_ativ=coluna_inicial; n_ativ<coluna_inicial+arranjo_num_ativ_X_ListIds.length;n_ativ++){ // percorre as colunas
 		notas = Array(matriculas.length).fill("");
-		linha_inicial=4;
+		linha_inicial=3;
 		
 		for (var i = linha_inicial; i < lines.length-1; i++) { // percorre as linhas ou seja os alunos
 			ind = i -linha_inicial;
-			nome_csv = lines[i][0]+" "+lines[i][1];
+					   //Nome          Sobrenome
+			nome_csv = lines[i][1]+" "+lines[i][0];
 
 			if( lines[i][n_ativ]==undefined || lines[i][n_ativ]==null ||  lines[i][n_ativ].length==0 ) continue;
 
