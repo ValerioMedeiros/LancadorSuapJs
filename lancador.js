@@ -26,8 +26,12 @@ Esta é a versão inicial do lançador Python.
     <div id="output">
     </div>
   </div>
-
 */
+
+document.body.innerHTML = document.body.innerHTML + "<div>  <form class=\"form-horizontal well\">      <legend>        <h3>          <div id=\"title\">Lançamento de Notas</div>        </h3>      </legend>      <fieldset>          <label for=\"csvFileInput\"> <strong>CSV File:</strong>          </label>          <input type=\"file\" id=\"csvFileInput\" onchange=\"handleFiles(this.files)\"       accept=\".csv\">        </div>      </fieldset>    </form>    <div id=\"output\">    </div>  </div>";
+
+
+
 
 
 var tipo=null;
